@@ -748,3 +748,81 @@ a{color:inherit;}
   margin-top: 10px;
   color: rgba(255,255,255,.55);
 }
+
+/* Enquiry Banner/Panel (premium side panel) */
+.enq{position:fixed;inset:0;display:none;z-index:9999}
+.enq.is-open{display:block}
+.enq-backdrop{
+  position:absolute;inset:0;
+  background:rgba(8,14,24,.62);
+  backdrop-filter: blur(6px);
+}
+.enq-panel{
+  position:absolute;top:0;right:0;height:100%;
+  width:min(520px, 92vw);
+  background:linear-gradient(180deg, #101826 0%, #0e1623 100%);
+  border-left:1px solid rgba(255,255,255,.08);
+  box-shadow:-30px 0 80px rgba(0,0,0,.45);
+  padding:22px 22px 18px;
+  overflow:auto;
+}
+.enq-lock{overflow:hidden}
+
+.enq-head{display:flex;align-items:flex-start;justify-content:space-between;gap:14px}
+.enq-kicker{
+  display:inline-flex;align-items:center;gap:8px;
+  color:rgba(255,255,255,.78);
+  font-weight:600;font-size:.92rem;
+}
+.enq-title{
+  font-family:"Fraunces", serif;
+  color:#fff;
+  font-size:1.8rem;
+  margin:.2rem 0 .35rem;
+  letter-spacing:.2px;
+}
+.enq-sub{color:rgba(255,255,255,.70);margin:0 0 8px;line-height:1.45}
+
+.enq-x{
+  border:1px solid rgba(255,255,255,.14);
+  background:rgba(255,255,255,.06);
+  color:#fff;border-radius:12px;
+  width:42px;height:42px;
+  display:grid;place-items:center;
+}
+.enq-x:hover{background:rgba(255,255,255,.10)}
+
+.enq-form{margin-top:14px}
+.enq-lab{color:rgba(255,255,255,.82);font-weight:600;font-size:.9rem;margin:10px 0 6px;display:block}
+.enq-inp{
+  width:100%;
+  border-radius:14px;
+  border:1px solid rgba(255,255,255,.12);
+  background:rgba(255,255,255,.06);
+  color:#fff;
+  padding:12px 12px;
+  outline:none;
+}
+.enq-inp::placeholder{color:rgba(255,255,255,.50)}
+.enq-inp:focus{
+  border-color:rgba(202,170,92,.65); /* gold */
+  box-shadow:0 0 0 4px rgba(202,170,92,.14);
+}
+.enq-ta{resize:vertical;min-height:110px}
+
+.enq-mini{
+  display:inline-flex;align-items:center;gap:8px;
+  color:rgba(255,255,255,.72);
+  font-size:.92rem;
+}
+.enq-mini i{color:#caaa5c} /* gold */
+
+.enq-btn{
+  border:0;border-radius:14px;
+  padding:12px 14px;
+  background:linear-gradient(90deg, #caaa5c 0%, #b8923f 100%);
+  color:#101826;
+  font-weight:800;
+  display:inline-flex;align-items:center;gap:8px;
+}
+.enq-btn:hover{filter:brightness(1.03)}
