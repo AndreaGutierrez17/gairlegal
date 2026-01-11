@@ -267,7 +267,7 @@
       No results. Try a different filter or search term.
     </div>
   </div>
-</main>
+
 <!-- FOOTER (V2 — Grey + Gold, closer to original) -->
 <footer class="gf">
   <div class="container">
@@ -339,6 +339,76 @@
   })();
 </script>
 
+<!-- ENQUIRY OVERLAY (Banner/Panel style) -->
+<div class="enq" id="enq" aria-hidden="true">
+  <div class="enq-backdrop" data-enq-close></div>
+
+  <aside class="enq-panel" role="dialog" aria-modal="true" aria-labelledby="enqTitle">
+    <div class="enq-head">
+      <div>
+        <div class="enq-kicker"><i class="ph ph-lock-key"></i> Secure enquiry</div>
+        <h3 class="enq-title" id="enqTitle">Request a call back</h3>
+        <p class="enq-sub">Share a few details and we’ll respond with clear next steps.</p>
+      </div>
+
+      <button class="enq-x" type="button" aria-label="Close" data-enq-close>
+        <i class="ph ph-x"></i>
+      </button>
+    </div>
+
+    <form class="enq-form" action="#" method="post">
+      <div class="row g-2">
+        <div class="col-12">
+          <label class="enq-lab" for="enqName">Full name</label>
+          <input class="enq-inp" id="enqName" name="name" type="text" placeholder="Your name" required>
+        </div>
+
+        <div class="col-12">
+          <label class="enq-lab" for="enqEmail">Email</label>
+          <input class="enq-inp" id="enqEmail" name="email" type="email" placeholder="name@company.com" required>
+        </div>
+
+        <div class="col-12">
+          <label class="enq-lab" for="enqPhone">Phone (optional)</label>
+          <input class="enq-inp" id="enqPhone" name="phone" type="tel" placeholder="+61 …">
+        </div>
+
+        <div class="col-12">
+          <label class="enq-lab" for="enqTopic">Practice area</label>
+          <select class="enq-inp" id="enqTopic" name="topic" required>
+            <option value="" selected disabled>Select…</option>
+            <option>Workers Compensation</option>
+            <option>Work Injury Damages & Recoveries</option>
+            <option>Catastrophic Injuries & Death Claims</option>
+            <option>Employment Law & WHS</option>
+            <option>Public Liability</option>
+            <option>Motor Vehicle</option>
+          </select>
+        </div>
+
+        <div class="col-12">
+          <label class="enq-lab" for="enqMsg">Short summary</label>
+          <textarea class="enq-inp enq-ta" id="enqMsg" name="message" rows="4"
+            placeholder="Briefly describe the matter (no sensitive details)."></textarea>
+        </div>
+
+        <div class="col-12 d-flex align-items-center justify-content-between gap-2 mt-2">
+          <div class="enq-mini">
+            <i class="ph ph-shield-check"></i>
+            <span>Confidential handling</span>
+          </div>
+
+          <button class="enq-btn" type="submit">
+            Send enquiry <i class="ph ph-paper-plane-tilt"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+  </aside>
+</div>
+
+
+</main>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="practice-areas.js"></script>
 </body>
