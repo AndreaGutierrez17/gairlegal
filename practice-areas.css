@@ -1,0 +1,202 @@
+:root{
+  --pa2-navy: rgba(11,26,51,1);
+  --pa2-gold: rgba(223,176,88,1);
+  --pa2-ink: rgba(11,18,32,.92);
+  --pa2-muted: rgba(11,18,32,.62);
+  --pa2-line: rgba(11,26,51,.10);
+}
+
+.pa2-hero{
+  background:
+    radial-gradient(900px 420px at 15% 20%, rgba(11,26,51,.06), rgba(255,255,255,0) 55%),
+    radial-gradient(760px 380px at 85% 25%, rgba(223,176,88,.10), rgba(255,255,255,0) 55%),
+    #fff;
+  border-bottom: 1px solid var(--pa2-line);
+  padding: 42px 0 26px;
+}
+
+.pa2-kicker{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  font-weight:900;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  font-size:.78rem;
+  color: rgba(11,18,32,.62);
+}
+.pa2-dot{
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(135deg, var(--pa2-gold), rgba(223,176,88,.55));
+  box-shadow:0 14px 32px rgba(223,176,88,.18);
+}
+
+.pa2-title{
+  font-family:"Fraunces",serif;
+  font-size: clamp(2.1rem, 1.25rem + 1.55vw, 3.0rem);
+  line-height:1.06;
+  margin: 14px 0 10px;
+  color: var(--pa2-ink);
+}
+
+.pa2-sub{
+  margin:0;
+  max-width: 78ch;
+  color: var(--pa2-muted);
+}
+
+.pa2-filters{
+  margin-top: 18px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  align-items:center;
+}
+
+.pa2-chip{
+  appearance:none;
+  border:1px solid var(--pa2-line);
+  background:#fff;
+  color: rgba(11,26,51,.92);
+  font-weight:900;
+  padding: 10px 12px;
+  border-radius: 999px;
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  transition: background .15s ease, border-color .15s ease, transform .15s ease;
+}
+.pa2-chip:hover{
+  transform: translateY(-1px);
+  border-color: rgba(11,26,51,.18);
+  background: rgba(11,26,51,.02);
+}
+.pa2-chip.is-active{
+  border-color: rgba(223,176,88,.42);
+  box-shadow: 0 18px 50px rgba(11,18,32,.06);
+  background: radial-gradient(420px 240px at 10% 0%, rgba(223,176,88,.12), rgba(255,255,255,1));
+}
+
+.pa2-spacer{flex:1 1 auto;}
+
+.pa2-search{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding: 10px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--pa2-line);
+  background:#fff;
+}
+.pa2-search i{color: rgba(11,26,51,.70); font-size:1.1rem;}
+.pa2-search input{
+  border:none;
+  outline:none;
+  width: 240px;
+  max-width: 52vw;
+  font-weight:700;
+  color: rgba(11,18,32,.84);
+}
+.pa2-search input::placeholder{color: rgba(11,18,32,.45);}
+
+.pa2-main{
+  padding: 26px 0 54px;
+  background:#fff;
+}
+
+.pa2-card{
+  display:block;
+  height:100%;
+  text-decoration:none;
+  color: inherit;
+  border-radius: 26px;
+  border: 1px solid var(--pa2-line);
+  background:#fff;
+  overflow:hidden;
+  box-shadow: 0 18px 70px rgba(11,18,32,.06);
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+.pa2-card:hover{
+  transform: translateY(-2px);
+  border-color: rgba(11,26,51,.16);
+  box-shadow: 0 28px 90px rgba(11,18,32,.10);
+}
+
+.pa2-media{
+  position:relative;
+  aspect-ratio: 16 / 10;
+  background: linear-gradient(180deg, rgba(11,26,51,.06), rgba(255,255,255,0));
+}
+.pa2-media img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+.pa2-badge{
+  position:absolute;
+  left: 14px;
+  bottom: 14px;
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  padding: 10px 12px;
+  border-radius: 999px;
+  font-weight:950;
+  color:#fff;
+  border: 1px solid rgba(255,255,255,.18);
+  background: linear-gradient(135deg, rgba(11,26,51,.96), rgba(10,33,71,.86));
+  box-shadow: 0 16px 44px rgba(11,26,51,.18);
+}
+.pa2-badge i{color: var(--pa2-gold); font-size:1.1rem;}
+
+.pa2-body{padding: 16px 16px 18px;}
+
+.pa2-meta{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-bottom: 10px;
+}
+.pa2-pill{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding: 8px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(11,26,51,.10);
+  background: rgba(11,26,51,.02);
+  color: rgba(11,26,51,.88);
+  font-weight:850;
+  font-size: .86rem;
+}
+.pa2-pill i{color: rgba(223,176,88,.95); font-size:1.05rem;}
+
+.pa2-text{
+  margin:0;
+  color: var(--pa2-muted);
+  line-height: 1.55;
+  min-height: 3.1em;
+}
+
+.pa2-cta{
+  margin-top: 12px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  font-weight:950;
+  color: rgba(11,26,51,.92);
+  padding-top: 12px;
+  border-top: 1px solid rgba(11,26,51,.10);
+}
+
+.pa2-empty{
+  margin-top: 18px;
+  padding: 18px;
+  border-radius: 20px;
+  border: 1px solid rgba(11,26,51,.10);
+  background: rgba(11,26,51,.02);
+  color: rgba(11,18,32,.70);
+  font-weight:800;
+}

@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+  <title>Practice Areas | Gair Legal</title>
+  <meta name="description" content="Explore Gair Legal’s practice areas. Specialist dispute resolution with disciplined delivery."/>
+  <meta name="robots" content="index,follow"/>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Icons -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500,650,750&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="practice-areas.css"/>
+</head>
+
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- Topbar -->
+<div class="topbar d-none d-lg-block">
+  <div class="container d-flex justify-content-between align-items-center">
+    <div class="topbar-left">
+      <span><i class="ph ph-seal-check"></i> Values-based • Integrity • Loyalty • Dedication</span>
+    </div>
+    <div class="topbar-right">
+      <a class="toplink" href="locations.html"><i class="ph ph-map-pin"></i> Locations</a>
+      <a class="toplink" href="contact.html"><i class="ph ph-lock-key"></i> Secure enquiry</a>
+    </div>
+  </div>
+</div>
+
+<!-- Navbar (routes) -->
+<nav class="navbar navbar-expand-lg navx sticky-top" aria-label="Primary navigation">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+      <img src="img/GairLegal-Logo.png" class="logo" alt="Gair Legal" style="height:46px;width:auto;">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain"
+      aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMain">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+
+        <li class="nav-item">
+          <a class="nav-link" href="index.html"><i class="ph ph-house"></i> Home</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="ph ph-briefcase"></i> Practice Areas
+          </a>
+          <ul class="dropdown-menu dropdownx">
+            <li><a class="dropdown-item" href="practice-areas.html">View all</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="practice-workers-comp.html">Workers Compensation</a></li>
+            <li><a class="dropdown-item" href="practice-injury-damages.html">Work Injury Damages & Recoveries</a></li>
+            <li><a class="dropdown-item" href="practice-catastrophic.html">Catastrophic Injuries & Death Claims</a></li>
+            <li><a class="dropdown-item" href="practice-employment.html">Employment Law & WHS</a></li>
+            <li><a class="dropdown-item" href="practice-liability.html">Public Liability</a></li>
+            <li><a class="dropdown-item" href="practice-motor.html">Motor Vehicle</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="about.html"><i class="ph ph-info"></i> About</a></li>
+        <li class="nav-item"><a class="nav-link" href="team.html"><i class="ph ph-users"></i> Team</a></li>
+        <li class="nav-item"><a class="nav-link" href="locations.html"><i class="ph ph-map-pin"></i> Locations</a></li>
+
+        <li class="nav-item ms-lg-2">
+          <a class="btn btnx" href="contact.html"><i class="ph ph-chat-circle-dots"></i> Enquire</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="pa2-hero">
+  <div class="container">
+    <div class="pa2-kicker"><span class="pa2-dot"></span> Practice Areas</div>
+    <h1 class="pa2-title">Specialised expertise, presented with clarity.</h1>
+    <p class="pa2-sub">
+      Explore our core areas of practice. Designed for quick scanning with a minimalist, premium layout.
+    </p>
+
+    <!-- Minimal filters -->
+    <div class="pa2-filters" role="group" aria-label="Practice area filters">
+      <button class="pa2-chip is-active" type="button" data-filter="all">
+        All
+      </button>
+      <button class="pa2-chip" type="button" data-filter="insurance">
+        Insurers
+      </button>
+      <button class="pa2-chip" type="button" data-filter="employers">
+        Employers
+      </button>
+      <button class="pa2-chip" type="button" data-filter="liability">
+        Liability
+      </button>
+      <button class="pa2-chip" type="button" data-filter="motor">
+        Motor
+      </button>
+      <button class="pa2-chip" type="button" data-filter="people">
+        People & WHS
+      </button>
+
+      <div class="pa2-spacer"></div>
+
+      <!-- Subtle search (optional but premium) -->
+      <div class="pa2-search">
+        <i class="ph ph-magnifying-glass"></i>
+        <input id="pa2Search" type="search" placeholder="Search practice areas" aria-label="Search practice areas">
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="main" class="pa2-main">
+  <div class="container">
+    <div class="row g-3 g-lg-4" id="pa2Grid">
+
+      <!-- Card 1 -->
+      <div class="col-md-6 col-lg-4 pa2-item" data-tags="insurance employers" data-title="Workers Compensation">
+        <a class="pa2-card" href="practice-workers-comp.html">
+          <div class="pa2-media">
+            <img src="img/Workers Compensation.jpg" alt="Workers Compensation">
+            <div class="pa2-badge"><i class="ph ph-user-focus"></i> Workers Compensation</div>
+          </div>
+          <div class="pa2-body">
+            <div class="pa2-meta">
+              <span class="pa2-pill"><i class="ph ph-shield-check"></i> Claims & disputes</span>
+              <span class="pa2-pill"><i class="ph ph-timer"></i> Efficient steps</span>
+            </div>
+            <p class="pa2-text">
+              Specialist advice and representation across disputes with disciplined strategy and clear next steps.
+            </p>
+            <div class="pa2-cta">
+              <span>Explore</span> <i class="ph ph-arrow-right"></i>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-6 col-lg-4 pa2-item" data-tags="insurance liability" data-title="Work Injury Damages & Recoveries">
+        <a class="pa2-card" href="practice-injury-damages.html">
+          <div class="pa2-media">
+            <img src="img/practice/injury-damages.jpg" alt="Work Injury Damages & Recoveries">
+            <div class="pa2-badge"><i class="ph ph-arrows-counter-clockwise"></i> Damages & Recoveries</div>
+          </div>
+          <div class="pa2-body">
+            <div class="pa2-meta">
+              <span class="pa2-pill"><i class="ph ph-compass-tool"></i> Strategy-first</span>
+              <span class="pa2-pill"><i class="ph ph-currency-dollar"></i> Cost-aware</span>
+            </div>
+            <p class="pa2-text">
+              Proactive common law strategy and recovery pathways designed for efficient, controlled outcomes.
+            </p>
+            <div class="pa2-cta">
+              <span>Explore</span> <i class="ph ph-arrow-right"></i>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-6 col-lg-4 pa2-item" data-tags="insurance liability" data-title="Catastrophic Injuries & Death Claims">
+        <a class="pa2-card" href="practice-catastrophic.html">
+          <div class="pa2-media">
+            <img src="img/practice/catastrophic.jpg" alt="Catastrophic Injuries & Death Claims">
+            <div class="pa2-badge"><i class="ph ph-heartbeat"></i> Catastrophic & Death Claims</div>
+          </div>
+          <div class="pa2-body">
+            <div class="pa2-meta">
+              <span class="pa2-pill"><i class="ph ph-hand-heart"></i> Care & clarity</span>
+              <span class="pa2-pill"><i class="ph ph-scales"></i> Disciplined advocacy</span>
+            </div>
+            <p class="pa2-text">
+              Handled with care, discipline and clarity—designed for sensitive, high-stakes dispute environments.
+            </p>
+            <div class="pa2-cta">
+              <span>Explore</span> <i class="ph ph-arrow-right"></i>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="col-md-6 col-lg-4 pa2-item" data-tags="people employers" data-title="Employment Law & Workplace Health & Safety">
+        <a class="pa2-card" href="practice-employment.html">
+          <div class="pa2-media">
+            <img src="img/practice/employment-whs.jpg" alt="Employment Law & Workplace Health & Safety">
+            <div class="pa2-badge"><i class="ph ph-hard-hat"></i> Employment Law & WHS</div>
+          </div>
+          <div class="pa2-body">
+            <div class="pa2-meta">
+              <span class="pa2-pill"><i class="ph ph-users"></i> Workforce</span>
+              <span class="pa2-pill"><i class="ph ph-lock-key"></i> Risk control</span>
+            </div>
+            <p class="pa2-text">
+              Clear, pragmatic advice for workplace matters—structured to reduce risk and support confident decisions.
+            </p>
+            <div class="pa2-cta">
+              <span>Explore</span> <i class="ph ph-arrow-right"></i>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="col-md-6 col-lg-4 pa2-item" data-tags="liability insurance" data-title="Public Liability">
+        <a class="pa2-card" href="practice-liability.html">
+          <div class="pa2-media">
+            <img src="img/practice/public-liability.jpg" alt="Public Liability">
+            <div class="pa2-badge"><i class="ph ph-buildings"></i> Public Liability</div>
+          </div>
+          <div class="pa2-body">
+            <div class="pa2-meta">
+              <span class="pa2-pill"><i class="ph ph-target"></i> Focused</span>
+              <span class="pa2-pill"><i class="ph ph-briefcase"></i> Disputes</span>
+            </div>
+            <p class="pa2-text">
+              Confident strategy for complex liability disputes—clear structure and disciplined communication.
+            </p>
+            <div class="pa2-cta">
+              <span>Explore</span> <i class="ph ph-arrow-right"></i>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="col-md-6 col-lg-4 pa2-item" data-tags="motor insurance" data-title="Motor Vehicle">
+        <a class="pa2-card" href="practice-motor.html">
+          <div class="pa2-media">
+            <img src="img/practice/motor-vehicle.jpg" alt="Motor Vehicle">
+            <div class="pa2-badge"><i class="ph ph-car-profile"></i> Motor Vehicle</div>
+          </div>
+          <div class="pa2-body">
+            <div class="pa2-meta">
+              <span class="pa2-pill"><i class="ph ph-route"></i> Accident claims</span>
+              <span class="pa2-pill"><i class="ph ph-scales"></i> Advocacy</span>
+            </div>
+            <p class="pa2-text">
+              Disciplined outcomes across accident claim disputes—structured advice, clear steps, confident delivery.
+            </p>
+            <div class="pa2-cta">
+              <span>Explore</span> <i class="ph ph-arrow-right"></i>
+            </div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+
+    <div class="pa2-empty" id="pa2Empty" hidden>
+      No results. Try a different filter or search term.
+    </div>
+  </div>
+</main>
+<!-- FOOTER (V2 — Grey + Gold, closer to original) -->
+<footer class="gf">
+  <div class="container">
+
+    <!-- Top: logo + offices -->
+    <div class="gf-top">
+      <div class="gf-brand">
+        <a href="index.html" class="gf-logo" aria-label="Gair Legal Home">
+          <img src="img/GairLegal-Logo-wht.png" alt="Gair Legal">
+        </a>
+        <div class="gf-slogan">Legal provider for insurers & employers</div>
+      </div>
+
+      <div class="gf-offices">
+        <div class="gf-office">
+          <div class="gf-oh">Northern Beaches</div>
+          <div class="gf-ol">Contact: +61 2 9916 9600</div>
+          <a class="gf-oa" href="mailto:sydneyoffice@gairlegal.com.au">sydneyoffice@gairlegal.com.au</a>
+        </div>
+
+        <div class="gf-office">
+          <div class="gf-oh">Newcastle</div>
+          <div class="gf-ol">Contact: +61 2 9916 9650</div>
+          <a class="gf-oa" href="mailto:newcastleoffice@gairlegal.com.au">newcastleoffice@gairlegal.com.au</a>
+        </div>
+
+        <div class="gf-office">
+          <div class="gf-oh">Chatswood</div>
+          <div class="gf-ol">Contact: +61 2 9916 9675</div>
+          <a class="gf-oa" href="mailto:chatswoodoffice@gairlegal.com.au">chatswoodoffice@gairlegal.com.au</a>
+        </div>
+
+        <div class="gf-office">
+          <div class="gf-oh">Melbourne</div>
+          <div class="gf-ol">Contact: +61 3 8637 9950</div>
+          <a class="gf-oa" href="mailto:melbourneoffice@gairlegal.com.au">melbourneoffice@gairlegal.com.au</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="gf-divider"></div>
+
+    <!-- Bottom: links left + disclaimer right -->
+    <div class="gf-bottom">
+      <nav class="gf-nav" aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="practice-workers-comp.html">Practice Areas</a>
+        <a href="team.html">Our Team</a>
+        <a href="locations.html">Locations</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="gf-legal">
+        <div class="gf-legal-strong">Gair Legal is a corporation and not a partnership.</div>
+        <div class="gf-legal-sub">
+          Liability limited by a scheme approved under Professional Standards Legislation.
+        </div>
+        <div class="gf-copy">© <span id="gfYear"></span> Gair Legal.</div>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var y = document.getElementById("gfYear");
+    if (y) y.textContent = new Date().getFullYear();
+  })();
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="practice-areas.js"></script>
+</body>
+</html>
